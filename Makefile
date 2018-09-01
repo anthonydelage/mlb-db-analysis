@@ -1,4 +1,4 @@
-.PHONY: venv, notebook
+.PHONY: venv
 
 venv: requirements.txt
 	@virtualenv venv -p python3
