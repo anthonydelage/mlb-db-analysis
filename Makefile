@@ -1,5 +1,13 @@
-.PHONY: venv
+.PHONY: clean, venv, all
 
-venv: requirements.txt
-	@virtualenv venv -p python3
-	@source venv/bin/activate && pip install -r requirements.txt
+clean:
+	rm -rf venv
+
+venv/bin/activate: requirements.txt
+	test -d venv || virtualenv venv -p python3
+	venv/bin/pip install -Ur requirements.txt
+	. venv/bin/activate
+
+venv: venv/bin/activate
+
+all: clean venv
