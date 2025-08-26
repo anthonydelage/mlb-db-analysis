@@ -5,13 +5,17 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
+    "imblearn>=0.0",
     "ipython>=9.4.0",
     "jupyter>=1.1.1",
     "matplotlib>=3.10.5",
     "numpy>=2.3.2",
     "pandas>=2.3.2",
     "pandas-gbq>=0.29.2",
+    "pygam>=0.10.1",
     "pyyaml>=6.0.2",
     "scikit-learn>=1.7.1",
     "seaborn>=0.13.2",
+    "xgboost>=3.0.4",
+    "yellowbrick>=1.5",
 ]
